@@ -35,7 +35,7 @@ const DUMMY_MEALS = [
 
 const AvailableMeals=()=>{
 
-    console.log('hii,',DUMMY_MEALS[0].id)
+    // console.log('hii,',DUMMY_MEALS[0].id)
     const mealsList =DUMMY_MEALS.map((meal)=>(
     <MealItem 
         id={meal.id} 
