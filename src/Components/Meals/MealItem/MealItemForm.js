@@ -15,7 +15,19 @@ const MealItemForm =props=>{
             alert('only in range of 1 to 5 allowed')
             return ;
         }
-        cartcntx.addItem( {...props.item,quantity:quantity})
+        let index=cartcntx.items.filter((p)=>p.id===props.item.id);
+        
+        if(index.length===0){
+
+            cartcntx.addItem( {...props.item,quantity:quantity})
+        }else{
+
+            const itemToUpdate = cartcntx.items.find(item => item.id === props.item.id);
+            if(itemToUpdate){
+                cartcntx.mergeItem(itemToUpdate,quantity)
+            }
+        }
+        // cartcntx.mergeItem()
         console.log(cartcntx.items)
     }
     return <form className={classes.form}>

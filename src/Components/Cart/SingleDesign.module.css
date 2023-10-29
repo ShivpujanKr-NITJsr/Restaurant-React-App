@@ -1,0 +1,45 @@
+.global{
+
+}
+
+.global label {
+    color:brown;
+    margin-right: 30px;
+    
+}
+
+.global .quantity {
+    color:black;
+}
+
+
+/* .global div button{
+    
+} */
+.global .button{
+    display:flex;
+    flex-direction:row;
+    justify-content:right;
+    border-radius: 5px;
+    
+
+}
+
+.global .button .minus {
+    height: 2rem;
+    width:3rem;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.global .button .plus {
+    height: 2rem;
+    width:3rem;
+    border-radius: 5px;
+}
+
+
+.global .button .minus:hover,.global .button .plus:hover {
+    background-color: brown;
+}
+
